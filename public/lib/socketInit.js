@@ -751,6 +751,7 @@ let {
         return port => {
             window.resizeEvent();
             let socket = new WebSocket(protocols[location.protocol] + window.serverAdd);
+            console.log(socket)
             // Set up our socket
             socket.binaryType = 'arraybuffer';
             socket.open = false;

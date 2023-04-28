@@ -15,7 +15,7 @@ import {
 } from "./lib/color.js";
 import * as socketStuff from "./lib/socketInit.js";
 (async function(util, global, config, Canvas, color, socketStuff) {
-    window.serverAdd = (await (await fetch("/serverData.json")).json()).ip;
+    window.serverAdd = (await (await fetch("/serverData.json")).json()).ip.split(":")[0];
     let {
         socketInit,
         gui,
@@ -35,7 +35,7 @@ import * as socketStuff from "./lib/socketInit.js";
             document.getElementById("patchNotes").innerHTML += `<div><b>${changelog[0][0].slice(1).trim()}</b>: ${changelog[0].slice(1).join(":") || "Update lol"}<ul>${changelog.slice(1).map(line => `<li>${line.slice(1).trim()}</li>`).join("")}</ul><hr></div>`;
         });
     });
-    util.pullJSON("mockups").then(data => global.mockups = data);
+  util.pullJSON("mockups").then(data => global.mockups = data);
     let animations = ((module) => {
         class Animation {
             constructor(start, to, smoothness = .05) {

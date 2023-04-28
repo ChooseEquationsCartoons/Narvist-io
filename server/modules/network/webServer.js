@@ -15,7 +15,7 @@ const path = require("path");
 const server = express();
 server.use(express.json());
 expressWs(server);
-server.use(minify());
+//server.use(minify());
 server.use(cors());
 if (c.servesStatic) {
     server.use(express.static(path.join(__dirname, "../../../public")));
