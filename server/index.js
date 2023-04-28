@@ -17,6 +17,7 @@ Array.prototype.remove = function(index) {
     this[index] = this.pop();
     return r;
 };
+
 util.log(room.width + ' x ' + room.height + ' room initalized.  Max food: ' + room.maxFood + ', max nest food: ' + (room.maxFood * room.nestFoodAmount) + '.');
 
 // The most important loop. Fast looping.

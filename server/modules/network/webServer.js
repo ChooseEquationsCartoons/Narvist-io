@@ -15,7 +15,7 @@ const path = require("path");
 const server = express();
 server.use(express.json());
 expressWs(server);
-//server.use(minify());
+server.use(minify());
 server.use(cors());
 if (c.servesStatic) {
     server.use(express.static(path.join(__dirname, "../../../public")));
@@ -27,13 +27,14 @@ server.get("/lib/json/gamemodeData.json", function(request, response) {
     response.send(JSON.stringify({
         gameMode: c.gameModeName,
         players: views.length,
-        code: [c.MODE, c.MODE === "ffa" ? "f" : c.TEAMS, c.secondaryGameMode].join("-")
+        code: [c.MODE, c.MODE === "ffa" ? "f" : c.TEAMS, c.secondaryGameMode].join("-"),
+        ip: c.host
     }));
 });
 server.get("/serverData.json", function(request, response) {
     response.json({
         ok: true,
-        ip: c.host + ":" + c.port
+        ip: c.host
     });
 });
 server.ws("/", sockets.connect);
