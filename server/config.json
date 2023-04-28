@@ -1,7 +1,7 @@
 {
-  "host": "localhost",
+  "host": "ossified-understood-individual.glitch.me",
   "servesStatic": true,
-  "port": 3000,
+  "port": 3001,
   "networkUpdateFactor": 24,
   "socketWarningLimit": 5,
   "networkFrontlog": 1,
