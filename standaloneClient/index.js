@@ -6,7 +6,7 @@ server.use(express.static(path.join(__dirname, "../public")));
 server.get("/serverData.json", function(request, response) {
     response.json({
         ok: true,
-        ip: "localhost:3000"
+        ip: "localhost:8080"
     });
 });
 server.listen(process.env.PORT || 5000, function() {
