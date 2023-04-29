@@ -5470,6 +5470,7 @@ exports.Metronaught1 = {
    DANGER: 10,
    SIZE: 80,
    COLOR: 9,
+  VALUE: 1890000,
   expectedMaxSkillLevel: 30,
   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
    BODY: {
