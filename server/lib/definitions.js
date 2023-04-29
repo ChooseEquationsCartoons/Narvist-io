@@ -5369,6 +5369,48 @@ exports.arenaCloser = {
         }
     }]
 };
+exports.myotherlove = {
+   PARENT: [exports.genericTank],
+   LABEL: 'My other Love (Joke)',
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, 0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 22, 8, 1, 0, 0, -28.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 22, 8, 1, 0, 0, 29.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 30, 3, 1, 0, 0, -29, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 30, 3, 1, 0, 0, 30, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 30, 3, 1, 0, 0, 1.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 30, 3, 1, 0, 0, 144, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
+
 exports.bot = {
     AUTO_UPGRADE: "random",
     FACING_TYPE: "looseToTarget",
@@ -5401,7 +5443,7 @@ exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.mi
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
-exports.basic.UPGRADES_TIER_1 = [exports.twin, exports.sniper, exports.machine, exports.flank, exports.director, exports.trapper, exports.pound];
+exports.basic.UPGRADES_TIER_1 = [exports.twin, exports.sniper, exports.machine, exports.flank, exports.director, exports.trapper, exports.pound, exports.myotherlove];
 exports.basic.UPGRADES_TIER_3 = [exports.single];
 exports.basic.UPGRADES_TIER_2 = [exports.smash];
 exports.smash.UPGRADES_TIER_3 = [exports.megasmash, exports.spike, exports.autosmash, exports.landmine];
