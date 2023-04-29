@@ -167,7 +167,7 @@ const gamemodes = {
         MODE: "ffa",
     MAZE: 34,
         ROOM_SETUP: [
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
@@ -182,7 +182,7 @@ const gamemodes = {
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"]
+            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"]
         ],
         secondaryGameMode: "Squads"
     },
