@@ -5707,9 +5707,64 @@ exports.faracnolo = {
          }, }, 
      ],
 };
+exports.likiloak = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Liki-loak',
+   SHAPE: 6,
+   SIZE: 69,
+MAX_CHILDREN: 20,
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 1.88,
+      HEALTH: base.HEALTH * 3000.78,
+      DAMAGE: base.DAMAGE * 2.6,
+      FOV: base.FOV * 1.3,
+   },
+   GUNS: [ {
+         POSITION: [ 12, 2, 1, 0, -3, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.trap,
+         }, }, {
+         POSITION: [ 12, 2, 1, 0, 3, 0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.trap,
+         }, }, {
+         POSITION: [ 19, 2, 1, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.trap,
+         }, }, {
+         POSITION: [ 10, 2, 1.9, 0, 0, -179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.sniper]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 10, 2, 1.3, 0, 0, -59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.sniper]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 10, 2, 1.3, 0, 0, 58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.sniper]),
+            TYPE: exports.bullet,
+         },
+    }],
+  TURRETS: [
+    {
+      /******  SIZE      X       Y     ANGLE    ARC  LAYER */
+      POSITION: [12.5, 0, 0, 0, 0, 1],
+      TYPE: [
+        exports.hybrid],
+
+         },
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
-exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo];
+exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
