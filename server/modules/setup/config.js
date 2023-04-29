@@ -166,7 +166,7 @@ const gamemodes = {
     "SPECIAL_BOSS_SPAWNS": true,
         MODE: "tdm",
         ROOM_SETUP: [
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom0", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
@@ -181,7 +181,7 @@ const gamemodes = {
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom0", "norm", "norm", "norm", "norm", "norm", "norm", "norm"]
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"]
         ],
         secondaryGameMode: "Squads"
     },
