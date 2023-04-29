@@ -5895,10 +5895,75 @@ exports.felecimetro = {
          }, 
      ],
 };
+exports.Metronaught3 = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Metronaught3',
+   SHAPE: 6,
+   SKILL_CHEAT_CAP: 100,
+  SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   SIZE: 76,
+   MAX_CHILDREN: 29,
+   COLOR: 9,
+   BODY: {
+      HEALTH: base.HEALTH * 1970,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 12, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.block,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 3, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, -3, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 0, -56, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 0, -122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 0, -179, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 0, 120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 3, 1, 0, 0, 59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 5, 1.4, 0, 0, -89, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.gunner, g.mach]),
+            TYPE: exports.turreteddrone,
+         }, }, {
+         POSITION: [ 18, 5, 1.4, 0, 0, 89.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.gunner, g.mach]),
+            TYPE: exports.turreteddrone,
+         }, }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
-exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro];
+exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
