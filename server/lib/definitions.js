@@ -5462,6 +5462,7 @@ exports.whatonearthh = {
          }, }, 
      ],
 };
+let metroskl = 16;
 exports.Metronaught1 = {
    PARENT: [exports.genericTank],
    LABEL: 'MetroNaught',
@@ -5469,6 +5470,7 @@ exports.Metronaught1 = {
    DANGER: 10,
    SIZE: 80,
    COLOR: 9,
+  SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
    BODY: {
       SPEED: base.SPEED * 2.5,
       HEALTH: base.HEALTH * 3000,
@@ -5507,8 +5509,161 @@ exports.Metronaught1 = {
          }, }, 
      ],
 };
+exports.Metronaught2 = {
+   PARENT: [exports.genericTank],
+   LABEL: 'MetroNaught',
+   SHAPE: 6,
+   DANGER: 10,
+   SIZE: 80,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 2.5,
+      HEALTH: base.HEALTH * 3000,
+      DAMAGE: base.DAMAGE * 2.5,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, -57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -120, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, -59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, -120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, -180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, 123.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 13, 3, 1.25, 0, 0, 60.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, 
+     ],
+};
+exports.Metronaughtrulfle = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Rulfle-Metronaught',
+   SHAPE: 6,
+   DANGER: 10,
+   SIZE: 35,
+   COLOR: 9,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   BODY: {
+      SPEED: base.SPEED * 2.5,
+      HEALTH: base.HEALTH * 3000,
+      DAMAGE: base.DAMAGE * 2.5,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, -57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -120, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, -58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, -120, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, 179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, 120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 21, 5, 1, 0, 0, 57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
+exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
