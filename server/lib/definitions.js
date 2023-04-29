@@ -5734,7 +5734,7 @@ MAX_CHILDREN: 20,
          POSITION: [ 19, 2, 1, 0, 0, -0.5, 0, ],
          PROPERTIES: {
             SHOOT_SETTINGS: combineStats([g.basic]),
-            TYPE: exports.trap,
+            TYPE: exports.autosmash, MAX_CHILDREN: 4,
          }, }, {
          POSITION: [ 10, 2, 1.9, 0, 0, -179.5, 0, ],
          PROPERTIES: {
@@ -5760,6 +5760,60 @@ MAX_CHILDREN: 20,
         exports.hybrid],
 
          },
+     ],
+};
+exports.aliniloko = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Alini-Loko',
+   SHAPE: 6,
+   SIZE: 38,
+   MAX_CHILDREN: 30,
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 1.8992,
+      HEALTH: base.HEALTH * 3200,
+   },
+   GUNS: [ {
+         POSITION: [ 15, 6, 1, 0, 0, 15, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.hive,
+         }, }, {
+         POSITION: [ 15, 6, 1, 0, 0, -19, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.hive,
+         }, }, {
+         POSITION: [ 20, 6, 1, 0, 0, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 20, 5, 0.5, 0, 0, -90, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 20, 5, 0.5, 0, 0, 89, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 15, 4, 1, 0, 0, -151, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 15, 4, 1, 0, 0, 148.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 20, 7, 1, 0, 0, -180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, 
      ],
 };
 
