@@ -164,6 +164,7 @@ const gamemodes = {
         WIDTH: 12000,
         HEIGHT: 9500,
     "SPECIAL_BOSS_SPAWNS": true,
+    
         MODE: "ffa",
     MAZE: 34,
         ROOM_SETUP: [
