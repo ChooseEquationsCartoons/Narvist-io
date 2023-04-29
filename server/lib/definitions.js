@@ -5766,8 +5766,9 @@ exports.aliniloko = {
    PARENT: [exports.genericTank],
    LABEL: 'Alini-Loko',
    SHAPE: 6,
-   SIZE: 38,
+   SIZE: 100,
    MAX_CHILDREN: 30,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
    COLOR: 9,
    BODY: {
       SPEED: base.SPEED * 1.8992,
@@ -5819,6 +5820,7 @@ exports.aliniloko = {
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
+exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
