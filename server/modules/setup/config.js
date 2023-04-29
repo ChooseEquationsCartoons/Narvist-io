@@ -164,8 +164,8 @@ const gamemodes = {
         WIDTH: 12000,
         HEIGHT: 9500,
     "SPECIAL_BOSS_SPAWNS": true,
-        MODE: "tdm",
-    TEAMS: 2,
+        MODE: "ffa",
+    MAZE: 34,
         ROOM_SETUP: [
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
