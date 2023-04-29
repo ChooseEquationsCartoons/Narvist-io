@@ -5592,6 +5592,8 @@ exports.Metronaughtrulfle = {
    DANGER: 10,
    SIZE: 35,
    COLOR: 9,
+  SKILL_BOOST: 20,
+  MAX_SKILL: 160,
    SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
    BODY: {
       SPEED: base.SPEED * 2.5,
@@ -5663,7 +5665,7 @@ exports.Metronaughtrulfle = {
 };
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
-exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2];
+exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
