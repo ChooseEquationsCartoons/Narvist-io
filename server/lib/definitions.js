@@ -5819,10 +5819,86 @@ exports.aliniloko = {
          }, }, 
      ],
 };
+exports.felecimetro = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Felici',
+   SHAPE: 6,
+   SIZE: 89,
+   MAX_CHILDREN: 60,
+  SKILL_CHEAT_CAP: 100,
+  SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 2.5,
+      HEALTH: base.HEALTH * 1000,
+   },
+   GUNS: [ {
+         POSITION: [ 12, 5, 1, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 12, 5, 1, 0, 0, 179, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, -42, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, -69.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, -140, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, -108, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, 133.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, 108, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, 77, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+         }, }, {
+         POSITION: [ 16, 1, 1, 0, 0, 46.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.boomerang,
+           },
+    }],
+  TURRETS: [
+    {
+      /******  SIZE      X       Y     ANGLE    ARC  LAYER */
+      POSITION: [12.5, 0, 0, 0, 0, 1],
+      TYPE: [
+        exports.sniper],
+
+         }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
-exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko];
+exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
