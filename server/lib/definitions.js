@@ -5663,6 +5663,50 @@ exports.Metronaughtrulfle = {
          }, }, 
      ],
 };
+exports.faracnolo = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Farac-Nolo',
+   SHAPE: 6,
+   SIZE: 80,
+   MAX_CHILDREN: 36,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   COLOR: 9,
+   BODY: {
+      HEALTH: base.HEALTH * 5000,
+   },
+   GUNS: [ {
+         POSITION: [ 12, 3, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, {
+         POSITION: [ 12, 3, 1, 0, 0, -60, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, {
+         POSITION: [ 12, 3, 1, 0, 0, 58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, {
+         POSITION: [ 12, 3, 1, 0, 0, 120, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, {
+         POSITION: [ 12, 3, 1, 0, 0, -179, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, {
+         POSITION: [ 12, 3, 1, 0, 0, -122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.minion,
+         }, }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle];
