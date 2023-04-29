@@ -5462,7 +5462,7 @@ exports.whatonearthh = {
          }, }, 
      ],
 };
-let metroskl = 16;
+let metroskl = 15;
 exports.Metronaught1 = {
    PARENT: [exports.genericTank],
    LABEL: 'MetroNaught',
@@ -5470,6 +5470,7 @@ exports.Metronaught1 = {
    DANGER: 10,
    SIZE: 80,
    COLOR: 9,
+  expectedMaxSkillLevel: 30,
   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
    BODY: {
       SPEED: base.SPEED * 2.5,
