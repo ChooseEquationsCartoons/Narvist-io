@@ -11,15 +11,15 @@
   "runSpeed": 1.5,
   "maxHeartbeatInterval": 300000,
   "verbose": true,
-  "WIDTH": 1900,
+  "WIDTH": 5900,
   "HEIGHT": 10500,
   "MODE": "tdm",
-  "TEAMS": 2,
+  "TEAMS": 4,
   "RANDOM_COLORS": false,
   "ARENA_TYPE": "rect",
   "BANNED_CHARACTER_REGEX": "/[\uFDFD\u200E\u0000]/gi", 
   "ROOM_SETUP": [
-      [ "norm", "norm", "norm", "norm", "norm", "norm", "roid", "wall", "norm", "norm", "norm", "norm" ],
+      [ "norm", "norm", "norm", "norm", "norm", "norm", "roid", "wall", "norm", "norm", "norm", "boss" ],
       [ "norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm" ],
       [ "norm", "norm", "rock", "norm", "norm", "norm", "norm", "wall", "norm", "rock", "norm", "norm" ],
       [ "port", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "port" ],
@@ -30,7 +30,7 @@
       [ "norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm" ],
       [ "norm", "norm", "rock", "norm", "norm", "norm", "norm", "wall", "norm", "rock", "norm", "norm" ],
       [ "norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm" ],
-      [ "norm", "norm", "norm", "norm", "norm", "norm", "roid", "wall", "norm", "norm", "norm", "norm" ]
+      [ "norm", "norm", "norm", "norm", "norm", "norm", "roid", "wall", "norm", "norm", "norm", "boss" ]
     ],
   "X_GRID": 12,
   "Y_GRID": 12,
@@ -70,7 +70,7 @@
   "NEST_FOOD_AMOUNT": 1.5, 
   "CRASHER_RATIO": 2,
   "SKILL_BOOST": 5,
-  "BOTS": 9,
+  "BOTS": 3,
   "GLASS_HEALTH_FACTOR": 2,
   "SPECIAL_BOSS_SPAWNS": false,
   "MOTHERSHIP_LOOP": false,
@@ -78,7 +78,7 @@
   "SPACE_MODE": false,
   "MAZE": false,
   "DOMINATOR_LOOP": false,
-  "secondaryGameMode": "Squads",
+  "secondaryGameMode": "z",
   "GROUPS": false,
   "TAG": false
 }

@@ -16,7 +16,7 @@ const gamemodes = {
         BOTS: 9
     }, // "defaults" is already FFA.
     "Open TDM": {
-        MODE: "tdm",
+        MODE: "FFA",
         TEAMS: 2 + (Math.random() * 3 | 0),
         BOTS: 10
     },
