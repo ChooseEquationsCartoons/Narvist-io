@@ -165,6 +165,7 @@ const gamemodes = {
         HEIGHT: 9500,
     "SPECIAL_BOSS_SPAWNS": true,
         MODE: "tdm",
+    TEAMS: 1,
         ROOM_SETUP: [
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],

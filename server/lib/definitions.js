@@ -5462,8 +5462,53 @@ exports.whatonearthh = {
          }, }, 
      ],
 };
+exports.Metronaught1 = {
+   PARENT: [exports.genericTank],
+   LABEL: 'MetroNaught',
+   SHAPE: 6,
+   DANGER: 10,
+   SIZE: 80,
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 2.5,
+      HEALTH: base.HEALTH * 3000,
+      DAMAGE: base.DAMAGE * 2.5,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, -57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -120, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, 179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
 
-exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic];
+exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
