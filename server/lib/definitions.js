@@ -5462,7 +5462,7 @@ exports.whatonearthh = {
          }, }, 
      ],
 };
-let metroskl = 15;
+let metroskl = 40;
 exports.Metronaught1 = {
    PARENT: [exports.genericTank],
    LABEL: 'MetroNaught',
@@ -6153,7 +6153,7 @@ exports.liacarapooi = {
       /******  SIZE      X       Y     ANGLE    ARC  LAYER */
       POSITION: [11.68, 0, 0, 0, 0, 1],
       TYPE: [
-        exports.autogunner],
+        exports.gunner],
 
          }, 
      ],
