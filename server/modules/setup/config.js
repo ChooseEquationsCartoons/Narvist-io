@@ -165,13 +165,14 @@ const gamemodes = {
         HEIGHT: 9500,
     "SPECIAL_BOSS_SPAWNS": true,
     
-        MODE: "ffa",
-    MAZE: 34,
+        MODE: "tdm",
+    TEAMS: 3,
+    MAZE: 40,
         ROOM_SETUP: [
-            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
@@ -179,11 +180,11 @@ const gamemodes = {
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "nest", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
-            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "wall", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"]
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+            ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"]
         ],
         secondaryGameMode: "Squads"
     },
