@@ -4656,7 +4656,6 @@ exports.sentryGun = makeAuto(exports.sentry, "Sentry", {
     AI: {
         NO_LEAD: true
     },
-    FACING_TYPE: "autospin",
     HITS_OWN_TYPE: "hardOnlyBosses",
     BROADCAST_MESSAGE: "A visitor has left!"
 };
