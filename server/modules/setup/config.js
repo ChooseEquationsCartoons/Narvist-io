@@ -166,7 +166,7 @@ const gamemodes = {
     "SPECIAL_BOSS_SPAWNS": true,
     
         MODE: "tdm",
-    TEAMS: 3,
+    TEAMS: 4,
     MAZE: 40,
         ROOM_SETUP: [
             ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"],
