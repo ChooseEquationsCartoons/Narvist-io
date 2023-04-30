@@ -186,7 +186,7 @@ const gamemodes = {
             ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
             ["boss", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "dom1", "norm", "norm", "norm", "norm", "norm", "norm", "boss"]
         ],
-        secondaryGameMode: "Squads"
+        secondaryGameMode: "Boss Rush"
     },
     "Maze 4TDM": {
         MAZE: 32,
