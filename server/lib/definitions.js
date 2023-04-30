@@ -5464,7 +5464,7 @@ exports.whatonearthh = {
 };
 let metroskl = 15;
 exports.Metronaught1 = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'MetroNaught',
    SHAPE: 6,
    DANGER: 10,
@@ -5511,7 +5511,7 @@ exports.Metronaught1 = {
      ],
 };
 exports.Metronaught2 = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'MetroNaught',
    SHAPE: 6,
    DANGER: 10,
@@ -5587,7 +5587,7 @@ exports.Metronaught2 = {
      ],
 };
 exports.Metronaughtrulfle = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Rulfle-Metronaught',
    SHAPE: 6,
    DANGER: 10,
@@ -5665,7 +5665,7 @@ exports.Metronaughtrulfle = {
      ],
 };
 exports.faracnolo = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Farac-Nolo',
    SHAPE: 6,
    SIZE: 80,
@@ -5709,7 +5709,7 @@ exports.faracnolo = {
      ],
 };
 exports.likiloak = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Liki-loak',
    SHAPE: 6,
    SIZE: 69,
@@ -5764,7 +5764,7 @@ MAX_CHILDREN: 20,
      ],
 };
 exports.aliniloko = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Alini-Loko',
    SHAPE: 6,
    SIZE: 100,
@@ -5819,7 +5819,7 @@ exports.aliniloko = {
      ],
 };
 exports.felecimetro = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Felici',
    SHAPE: 6,
    SIZE: 89,
@@ -5895,7 +5895,7 @@ exports.felecimetro = {
      ],
 };
 exports.Metronaught3 = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Metronaught3',
    SHAPE: 6,
    SKILL_CHEAT_CAP: 100,
@@ -5960,7 +5960,7 @@ exports.Metronaught3 = {
      ],
 };
 exports.halacaust = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Hala-Caust',
    SHAPE: 6,
    SIZE: 74,
@@ -6040,7 +6040,7 @@ exports.halacaust = {
      ],
 };
 exports.gevericnomo = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Geveric-Nomo',
    SHAPE: 6,
    DAMAGE_CLASS: 0,
@@ -6089,7 +6089,7 @@ exports.gevericnomo = {
      ],
 };
 exports.liacarapooi = {
-   PARENT: [exports.genericTank],
+   PARENT: [exports.miniboss],
    LABEL: 'Liacara-Pooi',
    SHAPE: 6,
    SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
