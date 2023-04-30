@@ -5960,10 +5960,90 @@ exports.Metronaught3 = {
          }, }, 
      ],
 };
+exports.halacaust = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Hala-Caust',
+   SHAPE: 6,
+   SIZE: 74,
+   MAX_CHILDREN: 29,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 2.3,
+      HEALTH: base.HEALTH * 2000,
+      DAMAGE: base.DAMAGE * 3.15,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, 0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 14, 5, 1, 0, 0, -16, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 14, 5, 1, 0, 0, 20.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 14, 3, 1, 0, 0, 2, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 11, 3, 1, 0, 0, -34, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 11, 3, 1, 0, 0, 43.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 14, 6, 1, 0, 0, 179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach, g.gunner]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 14, 6, 0.5, 0, 0, -61, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 14, 6, 0.5, 0, 0, 68.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 14, 6, 0.5, 0, 0, -121, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 14, 6, 0.5, 0, 0, 118.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.swarm,
+           },
+    }],
+  TURRETS: [
+    {
+      /******  SIZE      X       Y     ANGLE    ARC  LAYER */
+      POSITION: [12.5, 0, 0, 0, 0, 1],
+      TYPE: [
+        exports.factory],
+
+         },
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
-exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3];
+exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
