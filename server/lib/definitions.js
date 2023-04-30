@@ -6089,9 +6089,79 @@ exports.gevericnomo = {
          }, }, 
      ],
 };
+exports.liacarapooi = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Liacara-Pooi',
+   SHAPE: 6,
+   SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   DANGER: 16,
+   SIZE: 79,
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 3,
+      HEALTH: base.HEALTH * 2600,
+      DAMAGE: base.DAMAGE * 6,
+   },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, -0.5, 0, ],
+         }, {
+         POSITION: [ 18, 8, 1, 0, 0, 180, 0, ],
+         }, {
+         POSITION: [ 11, 8, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.casing,
+         }, }, {
+         POSITION: [ 11, 8, 1, 0, 0, 180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.casing,
+         }, }, {
+         POSITION: [ 13, 8, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.casing,
+         }, }, {
+         POSITION: [ 13, 8, 1, 0, 0, -179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.casing,
+         }, }, {
+         POSITION: [ 13, 8, 0.8, 0, 0, -59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.hive,
+         }, }, {
+         POSITION: [ 13, 8, 0.8, 0, 0, -123, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.hive,
+         }, }, {
+         POSITION: [ 13, 8, 0.8, 0, 0, 60, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.hive,
+         }, }, {
+         POSITION: [ 13, 8, 0.8, 0, 0, 124.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound]),
+            TYPE: exports.hive,
+           },
+    }],
+  TURRETS: [
+    {
+      /******  SIZE      X       Y     ANGLE    ARC  LAYER */
+      POSITION: [11.68, 0, 0, 0, 0, 1],
+      TYPE: [
+        exports.autogunner],
+
+         }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
+exports.felecimetro.UPGRADES_TIER_1 = [exports.liacarapooi];
 exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust, exports.gevericnomo];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
