@@ -6040,10 +6040,59 @@ exports.halacaust = {
          },
      ],
 };
+exports.gevericnomo = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Geveric-Nomo',
+   SHAPE: 6,
+   DAMAGE_CLASS: 0,
+   DANGER: 11,
+  SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+   FACING_TYPE: 'spin',
+   SIZE: 73,
+   MAX_CHILDREN: 24,
+   COLOR: 9,
+   BODY: {
+      SPEED: base.SPEED * 2.5,
+      HEALTH: base.HEALTH * 2900,
+      DAMAGE: base.DAMAGE * 3,
+   },
+   GUNS: [ {
+         POSITION: [ 11, 7, 1.7, 0, 0, 1, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.sunchip,
+         }, }, {
+         POSITION: [ 11, 7, 1.7, 0, 0, -120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.sunchip,
+         }, }, {
+         POSITION: [ 11, 7, 1.7, 0, 0, 119.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.sunchip,
+         }, }, {
+         POSITION: [ 17, 5, 1, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.morereload]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 5, 1, 0, 0, -120.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.morereload]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 5, 1, 0, 0, 119.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.morereload]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
 
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
-exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust];
+exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust, exports.gevericnomo];
 exports.betaTanks.UPGRADES_TIER_1 = [exports.autocruiser, exports.master, exports.quint, exports.bentboomer, exports.quadtrapper, exports.sniper3];
 exports.bosses.UPGRADES_TIER_1 = [exports.elite_destroyer, exports.elite_gunner, exports.elite_sprayer, exports.elite_battleship, exports.palisade, exports.skimboss, exports.summoner, exports.nestKeeper];
 exports.misc.UPGRADES_TIER_1 = [exports.dominator, exports.destroyerDominator, exports.gunnerDominator, exports.trapperDominator, exports.mothership, exports.arenaCloser]
