@@ -18,7 +18,7 @@ function generateWaves() {
     Class.summoner,
     Class.nestKeeper,
     Class.Metronaught1,
-    Class.faracnolo, 
+    Class.faracnolo,
     Class.likiloak,
   ].sort(() => 0.5 - Math.random());
   let waves = [];

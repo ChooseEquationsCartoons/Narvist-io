@@ -6156,8 +6156,113 @@ exports.liacarapooi = {
          }, 
      ],
 };
-
-exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.Metronaught1];
+exports.lestie = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Lestie',
+   SHAPE: 6,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+  CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+ BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+   DAMAGE: 3,
+  },
+   GUNS: [ {
+         POSITION: [ 18, 8, 1, 0, 0, 58, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -59.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 18, 8, 1, 0, 0, -178.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
+exports.tabatay = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Tabatay',
+   SHAPE: 6,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   MAX_CHILDREN: 17,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+    DAMAGE: 3,
+  },
+   GUNS: [ {
+         POSITION: [ 12, 5, 1.8, 0, 0, 58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 12, 5, 1.8, 0, 0, 180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 12, 5, 1.8, 0, 0, -60, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, 
+     ],
+};
+exports.tabatayfloss = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Tabatay-Floss',
+   SHAPE: 6,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   MAX_CHILDREN: 17,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+    DAMAGE: 3,
+  },
+   GUNS: [ {
+         POSITION: [ 12, 5, 1.8, 0, 0, 58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 12, 5, 1.8, 0, 0, 180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 12, 5, 1.8, 0, 0, -60, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+           
+         }, }, 
+     ],
+};
+exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.lestie];
+exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
 exports.felecimetro.UPGRADES_TIER_1 = [exports.liacarapooi];
 exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust, exports.gevericnomo];
