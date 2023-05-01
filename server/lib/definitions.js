@@ -6261,8 +6261,108 @@ SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl
          }, }, 
      ],
 };
+exports.tabatayrayie = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Lestie-Rayie',
+     SHAPE: 6,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   MAX_CHILDREN: 17,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+    DAMAGE: 3,
+  },
+   GUNS: [ {
+         POSITION: [ 17, 7, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.metrobullet]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 7, 1, 0, 0, 124, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.metrobullet]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 7, 1, 0, 0, -119, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.metrobullet]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 11, 8, 0.3, 0, 0, -61.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 11, 8, 0.3, 0, 0, 179, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, {
+         POSITION: [ 11, 8, 0.3, 0, 0, 60, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.swarm,
+         }, }, 
+     ],
+};
+exports.tabatayblenc = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Lestie-Blenc',
+   SHAPE: 6,
+  COLOR: 9,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+  },
+   GUNS: [ {
+         POSITION: [ 17, 7, 1, 0, 0, 0, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 7, 1, 0, 0, 124, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 17, 7, 1, 0, 0, -119, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 13, 6, 2, 0, 0, -57.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 13, 6, 2, 0, 0, 179, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 13, 6, 2, 0, 0, 59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.mach]),
+            TYPE: exports.bullet,
+         }, }, 
+     ],
+};
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.lestie];
 exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay];
+exports.tabatay.UPGRADES_TIER_1 = [exports.tabatayfloss, exports.tabatayblenc];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
 exports.felecimetro.UPGRADES_TIER_1 = [exports.liacarapooi];
 exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust, exports.gevericnomo];
