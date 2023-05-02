@@ -6586,6 +6586,16 @@ SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl
           {
              POSITION: [15, 7, 1, 0, 0, 121.5, 0]
     }, {
+        POSITION: [3, 7, 1.7, 15, 0, 121.5, 0],
+        PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.trap]),
+            TYPE: exports.trap,
+            STAT_CALCULATOR: gunCalcNames.trap
+           },
+    },
+          {
+             POSITION: [15, 7, 1, 0, 0, -122, 0]
+    }, {
         POSITION: [3, 7, 1.7, 15, 0, -122, 0],
         PROPERTIES: {
             SHOOT_SETTINGS: combineStats([g.trap]),
@@ -6597,7 +6607,7 @@ SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl
      ],
 };
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.lestie];
-exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay, exports.pastra];
+exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay, exports.pastra, exports.yelest];
 exports.tabatay.UPGRADES_TIER_1 = [exports.tabatayfloss, exports.tabatayblenc];
 exports.pastra.UPGRADES_TIER_1 = [exports.pastramullybox, exports.pastralashes, exports.pastralest];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
