@@ -6394,6 +6394,40 @@ SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl
          }, }, 
      ],
 };
+exports.pastra = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Pastra',
+   SHAPE: 6,
+  COLOR: 9,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+  },
+   GUNS: [ {
+         POSITION: [ 11, 7, 0.4, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, 122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, -121.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, 
+     ],
+};
 exports.pastramullybox = {
    PARENT: [exports.genericTank],
    LABEL: 'Pastra-Mullybox',
