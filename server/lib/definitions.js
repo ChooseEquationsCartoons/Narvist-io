@@ -6360,9 +6360,159 @@ SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl
          }, }, 
      ],
 };
+exports.pastra = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Pastra',
+   SHAPE: 6,
+  COLOR: 9,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+  },
+   GUNS: [ {
+         POSITION: [ 11, 7, 0.4, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, 122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, -121.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, 
+     ],
+};
+exports.pastramullybox = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Pastra-Mullybox',
+ SHAPE: 6,
+  COLOR: 9,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+  },
+   GUNS: [ {
+         POSITION: [ 11, 7, 0.4, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, 122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, -121.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 13, 7, 0.5, 0, 0, -59, 0, ],
+         }, {
+         POSITION: [ 18, 3, 0.5, 0, 0, -59, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.bullet,
+         }, }, {
+         POSITION: [ 11, 3, 1.5, 0, 0, 56.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, {
+         POSITION: [ 11, 3, 1.5, 0, 0, -179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.drone,
+         }, }, 
+     ],
+};
+exports.pastralashes = {
+   PARENT: [exports.genericTank],
+   LABEL: 'Pastra-Lashes',
+   SHAPE: 6,
+  COLOR: 9,
+   SIZE: 80,
+  COLOR: 9,
+  VALUE: 1999000,
+   CONTROLLERS: [
+        'nearestDifferentMaster', 'mapAltToFire', 'minion', 'fleeAtLowHealth'],
+SKILL_CAP: [metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl, metroskl],
+  BODY: {
+  HEALTH: 2000,
+  SHIELD: 100,
+  SPEED: 1.5,
+  },
+   GUNS: [ {
+         POSITION: [ 11, 7, 0.4, 0, 0, -0.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, 122, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 7, 0.4, 0, 0, -121.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.autoswarm,
+         }, }, {
+         POSITION: [ 11, 3, 1.5, 0, 0, -60.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, {
+         POSITION: [ 11, 3, 1.5, 0, 0, 58, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, {
+         POSITION: [ 11, 3, 1.5, 0, 0, -180, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, {
+         POSITION: [ 15, 2, 1.5, 0, 0, 58.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, {
+         POSITION: [ 15, 2, 1.5, 0, 0, -179.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, {
+         POSITION: [ 15, 2, 1.5, 0, 0, -61.5, 0, ],
+         PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic]),
+            TYPE: exports.pillbox,
+         }, }, 
+     ],
+};
 exports.testbed.UPGRADES_TIER_1 = [exports.betaTanks, exports.bosses, exports.misc, exports.basic, exports.lestie];
-exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay];
+exports.lestie.UPGRADES_TIER_1 = [exports.Metronaught1, exports.tabatay, exports.pastra];
 exports.tabatay.UPGRADES_TIER_1 = [exports.tabatayfloss, exports.tabatayblenc];
+exports.pastra.UPGRADES_TIER_1 = [exports.pastramullybox, exports.pastralashes];
 exports.Metronaught1.UPGRADES_TIER_1 = [exports.Metronaught2, exports.Metronaughtrulfle, exports.faracnolo, exports.likiloak];
 exports.felecimetro.UPGRADES_TIER_1 = [exports.liacarapooi];
 exports.faracnolo.UPGRADES_TIER_1 = [exports.aliniloko, exports.felecimetro, exports.Metronaught3, exports.halacaust, exports.gevericnomo];
